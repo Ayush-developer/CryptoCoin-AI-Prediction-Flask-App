@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.cont {
+    display: flex;
+    height: 60vh; /* Adjust the height as needed */
+    justify-content: center;
+    align-items: center;
+    max-width: 800px; /* Set maximum width */
+    background-color: white;
+    overflow: hidden; /* Hide overflow */
+    border-radius: 10px;
+    margin: 125px auto; /* Center horizontally */
+}
+
+.left,
+.right {
+    flex: 1;
+}
+
+.left {
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.left h1 {
+    margin-top: 0;
+    padding-bottom: 20px;
+    text-align: center; 
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.input-div {
+    display: flex;
+    flex-direction: column; /* Arrange inputs vertically */
+    width: 60%; /* Set the width */
+    margin: 0 auto; /* Center horizontally */
+}
+
+.input-div .div {
+    position: relative;
+}
+
+.input-div .div input,
+.input-div .div .btn {
+    width: calc(100% - 22px); /* Take into account padding and border */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-bottom: 10px; /* Add margin between inputs */
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.btn {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #9CFF2D;
+    color: black;
+    border-radius: 5px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    border: none;
+}
+
+.btn:hover {
+    /* background-color: #444; */
+}
+
+.right img {
+    width: 100%;
+    height: auto; /* Adjusted height */
+    object-fit: cover; /* Ensure the image covers the entire space */
+    border-radius: 10px;
+}
